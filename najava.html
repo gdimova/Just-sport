@@ -1,0 +1,65 @@
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+ <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+  <h1 id="naslov"><var><ins>JustSport</ins></var></h1>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+  
+  </head>
+   
+  <body style="height:789">
+  <div id="header">
+		<div class="block1">
+		 <a href="http://www.nike.com/gb/en_gb/"><img src="images/nikelogo.jpg" style="width: 50px;padding-left: 15px;height: 50px;">  </img></a>
+		 <a href="http://www.global.adidas.com/"><img src="images/adidaslogo.jpg" style="width: 50px;padding-left: 15px;height: 50px;"></img></a>
+		<a href="http://global.lacoste.com/en/lacoste"><img src="images/lacostelogo.jpg" style="width: 50px;padding-left: 15px;height: 50px;"></img></a>	
+	</div>
+		<a href="Proekt.html"><img src="images/onlineStorelogo.jpg" alt="" width="845px" height="117" /></a>
+		<br>
+		<br>
+		<br>
+		<ul class="menu">
+			<li><a  href="Proekt.html" class="1"><img  src="images/but1.jpg" alt="" width="141" height="36" /></a></li>
+			<li><a class="2" href="katalog.html"><img src="images/but2.jpg" alt="" width="141" height="36" /></a></li>
+			<li><a class="3" href="kontakt.html"><img src="images/but3.jpg" alt="" width="141" height="36" /></a></li>
+			<li><a class="4" href="najava.html"><img src="images/but4.jpg" alt="" width="141" height="36" /></a></li>
+			<li><a class="5" href="kosnicka.html"><img src="images/but5.jpg" alt="" width="141px" height="36" /></a></li>
+			<li><img src="images/butclean.jpg" alt="" width="141px" height="36" /></li>
+		</ul>
+	</div>
+	
+          <div class="main">
+      <form class="form" method="post" action="#">
+       <h2>Најавување</h2>
+          <label>Име :</label>
+          <input type="text" name="dname" id="name"/>
+             <label>Презиме :</label>
+           <input type="text" name="dprezime" id="prezime"/>
+              <label>Password :</label>
+          <input type="password" name="password" id="password"/>
+            
+       <input type="button" name="register" id="register" value="Логирај се" onClick="reg()"/>
+            </form>
+                    </div>	
+ 
+ 
+    <script >
+    function reg(){
+	var ime=document.getElementById("name").value; 
+	var prezime=document.getElementById("prezime").value;
+	var password=document.getElementById("password").value;
+	
+	if(ime.length==" " || prezime.length==" " || password.length==" "){
+        alert("Податоците не се целосни");	
+	 }
+	 else if((password.length)<8){
+	  alert("Пасвордот треба да содржи повеќе од 8 карактери!!");
+	 }
+	 else
+	 alert("Успешно логирање!!!");
+}
+  </script>
+  </body>
+ 
+</html>
